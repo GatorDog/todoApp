@@ -1,19 +1,27 @@
 function domManip(project) {
 
-    let projectDOM = document.createElement('div')
 
     project.projectItems.forEach(todoItem => {
 
+        let checkbox = document.createElement('input')
+        checkbox.type = 'checkbox'
+        checkbox.classList.add('checkListCheckbox');
 
 
         let todoDOM = document.createElement('li')
         todoDOM.innerHTML = todoItem.title;
-        projectDOM.appendChild(todoDOM);
+        todoDOM.classList.add('checkListItem');
 
+        let todoList = document.getElementById('todoList')
+
+        todoList.appendChild(checkbox);
+        todoList.appendChild(todoDOM)
     })
 
-    let todoList = document.getElementById('todoList')
-    todoList.appendChild(projectDOM);
+    let projectList = document.getElementById('projectList');
+    projectList.innerHTML = project.project.title;
+    
+
 }
 
 export default domManip
