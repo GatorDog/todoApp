@@ -13,6 +13,7 @@ function newProject(projectTitle) {
 
 let firstProject = newProject("firstProject");
 
+firstProject.projectItems.push(createTodoItem("Mobile layout support"));
 firstProject.projectItems.push(createTodoItem("Popup Modal when plus button is clicked"));
 firstProject.projectItems.push(createTodoItem("new Project wiring"));
 firstProject.projectItems.push(createTodoItem("add Todo Button"));

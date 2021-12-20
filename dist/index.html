@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ce20d80245.js" crossorigin="anonymous"></script>
     <title>TODO</title>
 </head>
-<div id="header">Todo</div>
-<div id='sidebar'>
-    <button id='addProject'>+</button>
-    <div id="projectList">Project 1</div>
-</div>
+
+
+
 <body>
-    <div id="content">
-        <ul id="todoList"></ul>
+    <div class="gridContainer"> 
+
+
+        <h2 id = "title">TODO</h2>
+        <i class="fas fa-bars fa-2x"></i>
+     
+
+
+        <div class = 'sidebar'>
+            <button class="sidebarButton" id='addProject'>+</button>
+            <div id="projectList"></div>
+        </div>
+
+      
+        <div id="content">
+            <ul id="todoList"></ul>
+        </div>
+
     </div>
+
 </body>
 <script src='main.js'></script>
 <link rel="stylesheet" href="stylesheet.css">
