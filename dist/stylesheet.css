@@ -20,7 +20,7 @@
 
 /* Sidebar */
 
-.sidebar {
+.activeProject {
     grid-column: 1 / 13;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -31,9 +31,14 @@
     margin-top: 5px;
 }
 
-.sidebarButton {
+#projectDropdown {
+    grid-column: span 12;
+}
+
+#projectDropdownList {
     display: none;
 }
+
 
 /* Checklist Content */
 #content {
@@ -70,8 +75,8 @@
 
 
 @media only screen and (min-width: 800px) {
-
-    .sidebar {
+    /* Sidebar Wide*/
+    .activeProject {
         grid-column: 1 / 4;
         border-top: none;
         border-bottom: none;
@@ -80,12 +85,17 @@
         border-right-style: solid;
     }
 
+
+
+    /* Checklist Content Wide */
+
     #content {
         grid-column: 4 / 12;
+        padding-left: 20px;
     }
 
     #todoList {
-        grid-template-columns: 30px minmax(450px, 650px) 150px;
+        grid-template-columns: 30px minmax(400px, 650px) 150px;
     }
 
     .dueDate {

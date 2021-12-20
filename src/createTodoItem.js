@@ -2,6 +2,7 @@ import {startOfToday} from 'date-fns'
 
 
 function createTodoItem (itemTitle) {
+
     let todoItem = {
         title: itemTitle,
         desc: null,
