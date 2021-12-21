@@ -1,7 +1,7 @@
-function createProject (projectTitle) {
+function createProject (projectTitle, projectDesc) {
     let project = {
         title: projectTitle,
-        desc: null
+        desc: projectDesc,
     }
 
     return project

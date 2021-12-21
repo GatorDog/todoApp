@@ -1,7 +1,4 @@
-import { format, startOfToday } from 'date-fns'
-
-function domManip(project) {
-
+function populateChecklist(project) {
 
     project.projectItems.forEach(todoItem => {
 
@@ -18,6 +15,7 @@ function domManip(project) {
         dueDate.type = 'date';
         dueDate.classList.add('dueDate');
         dueDate.value = todoItem.dueDate;
+        
 
         let todoList = document.getElementById('todoList')
 
@@ -26,10 +24,10 @@ function domManip(project) {
         todoList.appendChild(dueDate);
     })
 
-    let projectList = document.getElementById('projectList');
-    projectList.innerHTML = project.project.title;
+    let activeProjectDisplay = document.getElementById('activeProjectDisplay');
+    activeProjectDisplay.innerHTML = project.project.title;
     
 
 }
 
-export default domManip
+export default populateChecklist

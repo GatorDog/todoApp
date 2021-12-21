@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ce20d80245.js" crossorigin="anonymous"></script>
-    <title>TODO</title>
+    <title>TODO:</title>
 </head>
 
 
@@ -14,24 +14,32 @@
     <div class="gridContainer"> 
 
 
-        <h2 id = "title">TODO</h2>
+        <h2 id = "title">TODO:</h2>
         <i class="fas fa-bars fa-2x" id="hamburgerMenu"></i>
      
         <div id="projectDropdown">
-            <div id="projectDropdownList">
-                <div>Project 1</div>
-                <div>Project 2</div>
-                <div>Add Project</div>
+            <div id="projectDropdownList"></div>
+        </div>
+
+        <div id="myModal" class="modal">      
+            <div class="modal-content">
+                <h3>Add Project:</h3>
+                <span class="close">&times;</span>
+                <label for="projectTitle">Project Title:</label>
+                <input type="text" name="projectTitle" id="projectTitleInput">
+                <label for="projectDesc">Project Description:</label>
+                <input type="text" name="projectDesc" id="projectDescInput">
+                <button type="submit" id="projectSaveButton">Save</button>
             </div>
         </div>
 
         <div class = 'activeProject'>
-            <div id="projectList"></div>
+            <div id="activeProjectDisplay"></div>
         </div>
 
       
         <div id="content">
-            <ul id="todoList"></ul>
+            <ul id="todoList"><i class="fas fa-plus fa-2x"></i><h2 id="addChecklistLabel">Add Checklist Item</h2></ul>
         </div>
 
     </div>
